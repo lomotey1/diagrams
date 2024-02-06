@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-05T03:47:37.029Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="B5huBiBQDH8Fobc4_E3z" version="23.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-06T03:26:27.223Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="qguCxL4d3sJWrKadJIEu" version="23.1.1" type="github">
   <diagram name="Page-1" id="bfe91b75-5d2c-26a0-9c1d-138518896778">
-    <mxGraphModel dx="1339" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2206" dy="1223" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -279,7 +279,7 @@
         <mxCell id="A_-BSA_oqNom-n1UGNlS-32" value="Misc Notes:&lt;br&gt;&lt;br&gt;A single 20-24 port switch should work fine. More switches can be added if it simplifies cable running&lt;br&gt;&lt;br&gt;pfSense and OPNSense work best with Intel NICs. Realtek NICs randomly crash.&lt;br&gt;&lt;br&gt;VLAN 5 - Full access to server. Specific port on the firewall with a specific static IP address, and remote access via Tailscale (preferred) or WireGuard.&lt;br&gt;&lt;br&gt;VLAN 10 - Can be segmented more if need be. Ports should be&amp;nbsp;&lt;br&gt;VLAN 30 (Voice) - Port Security should be enabled on all ports. If we want, we can place the server in the DMZ for additional segmentation.&amp;nbsp;&lt;i&gt;Will Asterisk/FreePBX assign numbers based on static IP addresses/MAC address only/etc?&lt;/i&gt;&lt;br&gt;VLAN 50 (IoT) - Internet access only, assuming customer wants to use NVR&#39;s online features. If not, limited network access and no internet access." style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1440" y="990" width="410" height="350" as="geometry" />
         </mxCell>
-        <mxCell id="A_-BSA_oqNom-n1UGNlS-33" value="Management/Remote Access" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.laptop;" parent="1" vertex="1">
+        <mxCell id="A_-BSA_oqNom-n1UGNlS-33" value="Management/Remote Access" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.laptop;horizontal=1;spacing=2;spacingTop=-85;" parent="1" vertex="1">
           <mxGeometry x="1490" y="520" width="100" height="55" as="geometry" />
         </mxCell>
         <mxCell id="A_-BSA_oqNom-n1UGNlS-37" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;strokeColor=#67AB9F;" parent="1" source="A_-BSA_oqNom-n1UGNlS-33" target="7c3789c024ecab99-8" edge="1">
@@ -366,6 +366,24 @@
               <mxPoint x="730" y="1540" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="wGYZC9w_Lk0ds9ITxm0t-1" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1400" y="877" as="sourcePoint" />
+            <mxPoint x="1400.05" y="765" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wGYZC9w_Lk0ds9ITxm0t-3" value="" style="endArrow=none;html=1;rounded=1;strokeWidth=2;curved=0;strokeColor=#67AB9F;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1400" y="877" as="sourcePoint" />
+            <mxPoint x="1400" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1400" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wGYZC9w_Lk0ds9ITxm0t-4" value="&lt;div&gt;Service Port&lt;/div&gt;" style="html=1;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;shadow=0;dashed=0;shape=mxgraph.rack.hpe_aruba.switches.rj45_sfp_alt;spacingTop=-85;fontColor=#0066CC;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="410" width="62.5" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
